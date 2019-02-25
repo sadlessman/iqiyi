@@ -1,0 +1,282 @@
+@import "variate";
+@import "mixfun";
+.car-header{
+	margin-bottom: 30px;
+	.main{
+		@include clearfloat();
+		width: 980px;
+	}
+	.car-headerl{
+		margin-top: 30px;
+		float: left;
+	}
+	.car-headerr{
+		float: right;
+		ul{
+			padding-top: 25px;
+			color:$gray-1;
+			@include clearfloat();
+			li{
+				font-size: 15px;
+				width: 96px;
+				text-align: center;
+				float: left;
+			}
+		}
+		.car-jindu{
+			margin-top: 10px;
+			height: 30px;
+			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/def_grey_step.png) no-repeat;
+		}
+	}
+}
+
+.cart-main{
+	background: #fafafa;
+	@include border-cr-top(#e7e7e7);
+	.main{
+		@include border-cr(#e7e7e7);
+		padding: 20px;
+		width: 938px;
+		background: #fff;
+	}
+	.cart{
+		
+		
+	}
+	.cart-header{
+		@include clearfloat();
+		@include border-cr-bottom(#e7e7e7);
+		margin-bottom: 16px;
+		h1{
+			@include font-style((size:14px,
+			color:#3c3c3c,bold:bold));
+			line-height: 35px;
+			margin-right: 36px;
+			height: 98%;
+			float:left;
+			@include border-cr-bottom($maincolor,2px);
+		}
+		
+	}
+	.cart-title{
+		height: 38px;
+		@include border-cr(#e7e7e7);
+		background: #f7f7f7;
+		ul{
+			@include clearfloat();
+		}
+		li:nth-of-type(1){
+			width: 38px;
+		}
+		li:nth-of-type(3){
+			width: 358px;
+		}
+		li:nth-of-type(4){
+			width: 100px;
+		}
+		li:nth-of-type(5){
+			width: 140px;
+		}
+		li:nth-of-type(6){
+			width: 170px;
+		}
+		li{
+			text-align: center;
+			position: relative;
+			color: $gray-2;
+			input{
+				position: absolute;
+				margin: 0;
+				top: 15px;
+				left: 15px;
+				background: #fff;
+			}
+			vertical-align:middle;
+			height: 38px;
+			line-height: 38px;
+			float: left;
+		}
+	}
+}
+
+.cart-content{
+	margin: 10px 0;
+	@include border-cr(#e7e7e7);
+	.cart-title{
+		border: 0;
+	}
+	em{
+		font-weight:bold;
+		color: #3c3c3c;
+		}
+	.cart-conm{
+		padding: 20px 0;
+		background: #fff7f7;
+		ul{
+			@include clearfloat();
+		}
+		li{
+			float: left;
+		}
+		li:nth-of-type(1){
+			height: 100%;
+			padding: 10px 5px;
+			text-align: center;
+			vertical-align: middle;
+			overflow: hidden;
+			width: 30px;
+		}
+		li:nth-of-type(2){
+			margin-right: 5px;
+		}
+		li:nth-of-type(3){
+			line-height: 14px;
+			position: relative;
+			height: 80px;
+			p:hover{
+				color:$maincolor;
+			}
+			span{
+				color:$gray-1;
+			}
+			.icon-box{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				i:nth-of-type(1){
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/PC_detail_post.png);
+				}
+				i:nth-of-type(2){
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/PC_detail_send.png);
+				}
+				i:nth-of-type(3){
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/PC_detail_send.png);
+				}
+				i:nth-of-type(4){
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/PC_detail_floor.png);
+				}
+			}
+			i{
+				@include in-block((display:inline-block,height:16px,width:16px));
+				margin-right: 2px;
+			}
+			width: 280px;
+		}
+		
+		.price-li{
+			padding: 10px 5px;
+			width: 110px;
+			p{
+				text-align: center;
+			}
+			p:nth-of-type(1){
+				text-decoration: line-through;
+			}
+		}
+		.num-li{
+			padding: 10px 5px;
+			text-align: center;
+			.num{
+				margin-bottom: 10px;
+				margin-left: 30px;
+				margin-right: 30px;
+				@include clearfloat;
+				input{
+					width: 58px;
+					height: 28px;
+					outline: 0;
+					float: left;
+				}
+				.changebtn{
+					float: left;
+					width:25px;
+					margin-left: 3px;
+					span:nth-of-type(2){
+						background-position: -180px -66px;
+					}
+				}
+				span{
+					@include in-block((display:inline-block,height:14px,width:20px));
+					background-position: -160px -22px;
+					margin-bottom: 2px;
+					background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+			background-repeat: no-repeat;
+				}
+			}
+		}
+		.allprice-li{
+			width: 130px;
+			text-align: center;
+			@include font-style((size:18px,
+			color:$maincolor,bold:normal));
+		}
+		.operate-li{
+			width: 60px;
+			text-align: center;
+			line-height: 24px;
+			padding-left: 10px;
+			span{
+				cursor: pointer;
+			}
+			a{
+				color: $black;
+			}
+			a:hover{
+				color: $maincolor;
+			}
+			span:hover{
+					color: $maincolor;
+			}
+			
+		}
+	}
+}
+
+.cart-footer{
+	padding: 5px 0;
+	em{
+		color: $maincolor;
+		font-weight: bold;
+	}
+	i{
+		@include font-style((size:18px,
+		color:$maincolor,bold:normal));
+	}
+	li:nth-of-type(3){
+		text-align: left;
+		margin-left: 60px;
+		a{
+			line-height: 22px;
+			text-align: center;
+			color: #3c3c3c;
+			margin: 5px;
+			&:hover{
+				color:$maincolor;
+			}
+		}
+		a:nth-of-type(1){
+			@include in-block((display:inline-block,height:14px,width:48px));
+		}
+	}
+	li:nth-of-type(4){
+		margin-left: 65px;
+	}
+	#allmoney{
+		width: 155px;
+	}
+	#jiesuanbtn{
+		width: 100px;
+		margin-left: 20px;
+		p{
+		height: 38px;
+		background: $maincolor;
+		@include font-style((size:18px,
+		color:#fff,bold:normal));
+		border-radius: 3px;
+		}
+	}
+	
+	
+}
+

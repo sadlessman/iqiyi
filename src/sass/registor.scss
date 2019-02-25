@@ -1,0 +1,101 @@
+@import "variate";
+@import "mixfun";
+
+body{
+	background: #cbebf1;
+}
+#login-top{
+	@include border-cr-bottom(#e9e9e9);
+	.login-tm{
+		margin: 0 auto;
+		padding: 23px 0;
+		height: 32px;
+		line-height: 32px;
+		width: 1040px;
+		.logo{
+			background: url(http://www.iqiyipic.com/common/fix/pay/logo.png) no-repeat;
+			display: inline-block;
+			width: 97px;
+			height:40px;
+			float: left;
+		}
+		.rot{
+			float: left;
+			@include font-style((size:17px,color:#5aa700,bold:normal));
+			background: url(http://www.iqiyipic.com/common/fix/pay/dot.png) no-repeat left center;
+			padding-left: 5px;
+			margin-left: 6px;
+		}
+		.denglu{
+			float: right;
+		}
+	}
+}
+
+.login-main{
+	
+	background: #eff5ef;
+}
+.login-content{
+	width: 1280px;
+	height:640px;
+	margin: 0 auto;
+	
+	position: relative;
+	
+}
+.login-frame{
+		width: 460px;
+		position: absolute;
+		left: 50%;
+		margin-left: -230px;
+		background: #fff;
+		form{
+			width: 360px;
+			margin: 0 auto;
+		}
+		span{
+			color:#aaa;
+		}
+		input{
+			border:0;
+			outline: 0;
+		}
+		.login-name{
+			height: 50px;
+			line-height: 80px;
+			@include font-style((size:16px,color:#666,bold:normal));
+			text-align: center;
+		}
+		.login-input,.login-pass{
+			height: 78px;
+			position:relative;
+			@include border-cr-bottom(#ddd);
+			p{
+				padding-top: 26px;
+			}
+			input{
+				margin-top: 8px;
+			}
+		}
+		.login-pass{
+			
+		}
+		
+		.login-button{
+			input{
+				cursor: not-allowed;
+				background: #bcdd98;
+				height: 48px;
+				width: 100%;
+				line-height: 48px;
+				@include font-style((size:16px,color:#fff,bold:normal));
+				margin: 60px 0 40px 0;
+			}
+			input.active{
+				background: #63b700;
+				cursor: pointer;
+			}
+		}
+	}
+	

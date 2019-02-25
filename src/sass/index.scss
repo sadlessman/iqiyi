@@ -1,0 +1,28 @@
+
+@import "variate";
+@import "mixfun";
+@import "top";
+@import "header";
+@import "main";
+@import "message";
+@import "footer";
+
+.right-lan{
+	position: fixed;
+	left: 1369.5px;
+    bottom: 10px;
+	height: 82px;
+	div{
+		width: 36px;
+		height: 36px;
+		background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/baseRedScrollBar.png);
+		cursor: pointer;
+	}
+	.righht-fankui{
+		   background-position: -50px -82px;
+		margin-bottom: 10px;
+	}
+	.right-gotop{
+		    background-position: -50px -46px;
+	}
+}

@@ -1,0 +1,284 @@
+.main::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+
+.nav-lian {
+  height: 50px;
+  line-height: 50px;
+  font-size: 13px; }
+.nav-lian .spname {
+  color: #666; }
+
+.zoom1 {
+  width: 418px;
+  height: 418px;
+  border: 1px #e7e7e7 solid;
+  position: relative;
+  float: left; }
+.zoom1 .smallpic img {
+  max-height: 100%;
+  max-width: 100%; }
+.zoom1 .bigzoom {
+  display: none;
+  height: 420px;
+  width: 420px;
+  overflow: hidden;
+  position: absolute;
+  left: 428px;
+  top: -1px; }
+.zoom1 .bigzoom img {
+  position: absolute; }
+
+.imglist {
+  margin-top: 13px; }
+.imglist ul {
+  margin-left: 20px; }
+.imglist ul::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+.imglist ul li {
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  float: left; }
+.imglist ul li img {
+  cursor: pointer;
+  border: 1px #e7e7e7 solid;
+  height: 56px;
+  width: 56px;
+  padding: 1px; }
+
+.rightxx {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  width: 759px;
+  float: left; }
+.rightxx .spbt-t {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px; }
+.rightxx .spjs {
+  font-size: 14px;
+  color: #ee394b;
+  font-weight: normal;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 20px; }
+.rightxx .price {
+  background: #e9e9e9 url(//www.iqiyipic.com/common/fix/qy_shop/detail-priceBg.png) no-repeat;
+  background-size: cover; }
+.rightxx .price .price-now {
+  padding-top: 5px; }
+.rightxx .price .price-name {
+  line-height: 32px;
+  width: 60px;
+  padding: 0 10px 0 20px;
+  color: #999; }
+.rightxx .price .price-num {
+  line-height: 30px;
+  font-size: 20px;
+  color: #ee394b;
+  font-weight: normal; }
+.rightxx .price .price-num em {
+  font-size: 30px; }
+.rightxx .price .price-after span:nth-of-type(2) {
+  text-decoration: line-through; }
+
+.spxl {
+  padding: 15px 0 10px;
+  border-bottom: 1px dotted #c8c8c8; }
+.spxl span {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border-right: 1px #ccc solid; }
+.spxl i {
+  display: inline-block;
+  height: 12px;
+  width: 16px;
+  background: url(//www.iqiyipic.com/common/fix/iqiyi_shop_images/detail-icon.png) no-repeat; }
+.spxl span:nth-of-type(2) {
+  border: 0; }
+.spxl span:nth-of-type(2) i {
+  background-position: -22px 0; }
+.spxl em {
+  color: #ee394b; }
+
+.detail-info {
+  margin-top: 20px;
+  padding-left: 20px; }
+.detail-info .xxname {
+  float: left;
+  width: 66px;
+  color: #777; }
+.detail-info .address {
+  margin-bottom: 10px; }
+.detail-info .address span {
+  margin: 0 3px;
+  color: #999; }
+.detail-info .address i {
+  display: inline-block;
+  height: 6px;
+  width: 9px;
+  background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+  background-position: -100px 0;
+  background-repeat: no-repeat; }
+.detail-info .guige {
+  margin-bottom: 10px; }
+.detail-info .guige::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+.detail-info .guige .guigeimg {
+  margin: 10px 10px 0 0;
+  float: left; }
+.detail-info .guige .guigeimg a {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  background: url(https://mall6.iqiyipic.com/mall/20180702/76/8e/mall_5b3a05b014d455721795768e_30_30.jpg) center;
+  border: 1px #999 solid; }
+.detail-info .num {
+  margin-bottom: 10px; }
+.detail-info .num::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+.detail-info .num input {
+  width: 58px;
+  height: 28px;
+  outline: 0;
+  float: left; }
+.detail-info .num .changebtn {
+  float: left;
+  width: 25px;
+  margin-left: 3px; }
+.detail-info .num .changebtn span:nth-of-type(2) {
+  background-position: -180px -66px; }
+.detail-info .num span {
+  display: inline-block;
+  height: 14px;
+  width: 20px;
+  background-position: -160px -22px;
+  margin-bottom: 2px;
+  background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+  background-repeat: no-repeat; }
+
+.buybtns {
+  position: relative; }
+.buybtns input {
+  color: #fff;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  margin-right: 5px;
+  background: #ee394b;
+  font-size: 16px;
+  line-height: 38px;
+  cursor: pointer; }
+.buybtns i {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+  background-position: 0 -20px;
+  position: absolute;
+  left: 170px;
+  top: 10px; }
+
+.baoz {
+  margin-top: 20px; }
+.baoz li {
+  float: left;
+  margin-right: 15px;
+  color: #777; }
+.baoz li i {
+  margin-right: 2px;
+  background: url(https://mall3.iqiyipic.com/mall/20170217/0c/c9/mall_58a66acff6882e5fa5910cc9_1x1.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 16px;
+  width: 16px; }
+
+.sidelan {
+  position: fixed;
+  width: 42px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #000; }
+.sidelan ul:nth-of-type(1) li {
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+  padding: 8px 0; }
+.sidelan ul:nth-of-type(1) li span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-position: 0 -20px;
+  background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png); }
+.sidelan ul:nth-of-type(1) li i {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #ee394b;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  font-size: 14px; }
+.sidelan ul:nth-of-type(1) li:nth-of-type(1) a {
+  display: inline-block;
+  height: 23px;
+  width: 21px;
+  background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/toolbar_linkIcon.png) no-repeat;
+  margin: 10px 0; }
+.sidelan ul:nth-of-type(1) li:nth-of-type(2) {
+  padding: 11px;
+  width: 20px;
+  line-height: 16px; }
+.sidelan ul:nth-of-type(1) li:nth-of-type(2) a {
+  font-size: 14px;
+  color: #fff;
+  margin: 5px 0;
+  display: block; }
+.sidelan ul:nth-of-type(2) {
+  padding-left: 10px; }
+.sidelan ul:nth-of-type(2) li {
+  text-align: center;
+  margin: 10px 0; }
+.sidelan ul:nth-of-type(2) li a {
+  padding: 5px 0; }
+.sidelan ul:nth-of-type(2) li a i {
+  display: inline-block;
+  height: 16px;
+  width: 16px; }
+.sidelan ul:nth-of-type(2) li:nth-of-type(1) {
+  background: url(//www.iqiyipic.com/common/fix/iqiyi_shop_images/toolbar_codeIcon.png) no-repeat; }
+.sidelan ul:nth-of-type(2) li:nth-of-type(2) {
+  background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/feedback_icon.png) no-repeat; }
+.sidelan ul:nth-of-type(2) li:nth-of-type(3) {
+  display: inline-block;
+  height: 20px;
+  width: 25px;
+  background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/goTop_icon.png) no-repeat; }
+
+/*# sourceMappingURL=details.css.map */

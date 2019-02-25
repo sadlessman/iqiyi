@@ -1,0 +1,52 @@
+@mixin font-style($style) {
+	font-size:map-get($style,size);
+	color: map-get($style,color);
+	font-weight: map-get($style,bold);
+	@if map-has-key($style,hovercolor) {
+		&:hover{
+			color: map-get($style,hovercolor);
+		}
+	}
+}
+
+@mixin in-block($style) {
+	display: map-get($style,display);
+	@if map-has-key($style,height) {
+		height: map-get($style,height);
+	}
+	@if map-has-key($style,width) {
+		width: map-get($style,width);
+	}
+}
+@mixin border-cr-bottom($color:$gray-1,$size:1px,$type:solid){
+		border-bottom: $size $color $type;
+}
+@mixin border-cr-left($color:$gray-1,$size:1px,$type:solid){
+		border-left: $size $color $type;
+}
+@mixin border-cr-right($color:$gray-1,$size:1px,$type:solid){
+		border-right: $size $color $type;
+}
+@mixin border-cr-top($color:$gray-1,$size:1px,$type:solid){
+		border-top: $size $color $type;
+}
+@mixin border-cr($color:$gray-1,$size:1px,$type:solid){
+		border: $size $color $type;
+}
+@mixin clearfloat(){
+	&::after{
+		content: '';
+		clear:both;
+		display:block;
+		width:0;
+		height:0;
+		visibility:hidden;
+	}
+}
+
+@mixin  ellipsis(){
+		width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+}

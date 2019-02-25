@@ -1,0 +1,311 @@
+@import "variate";
+@import "mixfun";
+.main{
+	@include clearfloat;
+}
+.nav-lian{
+	height: 50px;
+	line-height: 50px;
+	font-size: 13px;
+	.spname{
+		color:#666;
+	}
+}
+
+.zoom1{
+	width: 418px;
+	height: 418px;
+	@include border-cr(#e7e7e7);
+	position: relative;
+	.smallpic{
+		img{
+			max-height:100%;
+			max-width:100%;
+		}
+	}
+	.bigzoom{
+		display: none;
+		height: 420px;
+		width: 420px;
+		overflow: hidden;
+		position: absolute;
+		left: 428px;
+		top: -1px;
+		img{
+			position: absolute;
+		}
+	}
+	float: left;
+}
+
+.imglist{
+	margin-top: 13px;
+	ul{
+		margin-left: 20px;
+		@include clearfloat();
+		li{
+			margin-right: 20px;
+			height: 60px;
+			width: 60px;
+			float: left;
+			img{
+				cursor: pointer;
+				@include border-cr(#e7e7e7);
+				height: 56px;
+				width: 56px;
+				padding: 1px;
+			}
+		}
+	}
+}
+
+.rightxx{
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	width: 759px;
+	float: left;
+	.spbt-t{
+		@include font-style((size:18px,
+		color:$black,bold:bold));
+		height: 24px;
+		line-height: 24px;
+	}
+	.spjs{
+		@include font-style((size:14px,
+		color:$maincolor,bold:normal));
+		height: 20px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.price{
+		    background: #e9e9e9 url(//www.iqiyipic.com/common/fix/qy_shop/detail-priceBg.png) no-repeat;
+			background-size: cover;
+			.price-now{
+				padding-top:5px; 
+			}
+			.price-name{
+				line-height: 32px;
+				width: 60px;
+				padding: 0 10px 0 20px;
+				color: $gray-1;
+			}
+			.price-num{
+				line-height: 30px;
+				@include font-style((size:20px,
+				color:$maincolor,bold:normal));
+				em{
+					font-size:30px;
+				}
+			}
+			.price-after{
+				span:nth-of-type(2){
+					text-decoration:line-through; 
+				}
+			}
+	}
+}
+
+.spxl{
+	padding: 15px 0 10px;
+	border-bottom: 1px dotted #c8c8c8;
+	span{
+		display: inline-block;
+		width: 100px;
+		text-align: center;
+		@include border-cr-right(#ccc);
+	}
+	i{
+		@include in-block((display:inline-block,height:12px,width:16px));
+		    background: url(//www.iqiyipic.com/common/fix/iqiyi_shop_images/detail-icon.png) no-repeat;
+	}
+	span:nth-of-type(2){
+		border: 0;
+		i{
+			background-position: -22px 0;
+		}
+	}
+	em{
+		color:$maincolor;
+	}
+	
+}
+
+
+.detail-info{
+	margin-top: 20px;
+	padding-left: 20px;
+	.xxname{
+		float: left;
+		width: 66px;
+		color: $gray-2;
+	}
+	.address{
+		margin-bottom: 10px;
+		span{
+			margin: 0 3px;
+			color: $gray-1;
+		}	
+		i{
+			@include in-block((display:inline-block,height:6px,width:9px));
+			background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+			background-position: -100px 0;
+			background-repeat: no-repeat;
+			}
+		
+	}
+	.guige{
+		@include clearfloat();
+		margin-bottom: 10px;
+
+		.guigeimg{
+			margin: 10px 10px 0 0;
+			float: left;
+			a{
+				@include in-block((display:inline-block,height:28px,width:28px));
+				    background: url(https://mall6.iqiyipic.com/mall/20180702/76/8e/mall_5b3a05b014d455721795768e_30_30.jpg) center;
+				@include border-cr($gray-1);
+			}
+		}
+	}
+	.num{
+		margin-bottom: 10px;
+		@include clearfloat;
+		input{
+			width: 58px;
+			height: 28px;
+			outline: 0;
+			float: left;
+		}
+		.changebtn{
+			float: left;
+			width:25px;
+			margin-left: 3px;
+			span:nth-of-type(2){
+				background-position: -180px -66px;
+			}
+		}
+		span{
+			@include in-block((display:inline-block,height:14px,width:20px));
+			background-position: -160px -22px;
+			margin-bottom: 2px;
+			background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+    background-repeat: no-repeat;
+		}
+	}
+}
+
+.buybtns{
+	position: relative;
+	input{
+		color: #fff;
+		border: 0;
+		outline: 0;
+		width: 150px;
+		height: 40px;
+		margin-right: 5px;
+		background: $maincolor;
+		font-size: 16px;
+		line-height: 38px;
+		cursor: pointer;
+	}
+	
+	i{
+		@include in-block((display:inline-block,height:20px,width:20px));
+		background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+		background-position: 0 -20px;
+		position: absolute;
+		left: 170px;
+		top: 10px;
+	}
+}
+
+.baoz{
+	margin-top: 20px;
+	li{
+		float: left;
+		margin-right: 15px;
+		color: $gray-2;
+		i{
+			margin-right: 2px;
+			background: url(https://mall3.iqiyipic.com/mall/20170217/0c/c9/mall_58a66acff6882e5fa5910cc9_1x1.png) no-repeat;
+    background-size: contain;
+	@include in-block((display:inline-block,height:16px,width:16px));
+		}
+	}
+}
+
+
+.sidelan{
+	position:fixed;
+	width: 42px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: #000;
+	ul:nth-of-type(1){
+		li{
+			text-align: center;
+			border-bottom: 1px dotted #ccc;
+			padding: 8px 0;
+			span{
+				@include in-block((display:inline-block,height:20px,width:20px));
+				background-position: 0 -20px;
+				background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png);
+			}
+			i{
+				@include in-block((display:inline-block,height:20px,width:20px));
+				background: $maincolor;
+				border-radius: 10px;
+				text-align: center;
+				line-height: 20px;
+				color: #fff;
+				font-size: 14px;
+			}
+		}
+		li:nth-of-type(1){
+			a{
+				@include in-block((display:inline-block,height:23px,width:21px));
+				background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/toolbar_linkIcon.png) no-repeat;
+				margin:10px 0;
+			}
+		}
+		li:nth-of-type(2){
+			padding:11px;
+			width: 20px;
+			line-height: 16px;
+			a{
+				font-size: 14px;
+				color: #fff;
+				margin: 5px 0;
+				display: block;
+			}
+		}
+	}
+	ul:nth-of-type(2){
+		padding-left: 10px;
+		li{
+			text-align: center;
+			margin: 10px 0; 
+			a{
+				padding: 5px 0;
+				i{
+					@include in-block((display:inline-block,height:16px,width:16px));
+				}
+				
+			}
+		}
+		li:nth-of-type(1){
+			background: url(//www.iqiyipic.com/common/fix/iqiyi_shop_images/toolbar_codeIcon.png) no-repeat;
+		}
+		 
+		li:nth-of-type(2){
+			 background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/feedback_icon.png) no-repeat;
+		}
+		li:nth-of-type(3){
+			@include in-block((display:inline-block,height:20px,width:25px));
+					    background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/goTop_icon.png) no-repeat;
+				}
+	}
+}
+

@@ -1,0 +1,416 @@
+
+#slideshow{
+	position: relative;
+	ul{
+		position: relative;
+		height: 400px;
+		li{
+			position: absolute;
+			left: 0;
+			right:0;
+			width: 100%;
+			height: 100%;
+			
+			a{
+				height: 100%;
+				display: block;
+				background:url(https://pic2.iqiyipic.com/common/20190220/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top;
+			}
+		}
+	}
+	ol{
+		position: absolute;
+		left: 50%;
+		margi-left:-60px;
+		bottom: 22px;
+		z-index: 20;
+		li{
+			float: left;
+			height: 12px;
+			width: 12px;
+			border-radius: 50%;
+			background: #000;
+			opacity: 0.4;
+			margin: 0 6px;
+		}
+	}
+	.left,.right{
+		height: 66px;
+		width: 66px;
+		display: block;
+		z-index: 20;
+		position: absolute;
+		top:50%;
+		margin-top: -35px;
+		left: 50%;
+	}
+	.left{
+		background: url(//www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png);
+		margin-left: -600px;
+		
+	}
+	.right{
+		background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png);
+		left: 50%;
+		margin-left: 600px;
+	}
+}
+
+#advertising_1,#advertising_2{
+	margin-top: 40px;
+}
+.title{
+		margin: 15px 0;
+		.title-left{
+		display: inline-block;
+		i{
+			@include in-block((display:inline-block,height:36px,width:36px));
+			
+			float: left;
+		}
+		.tit-cn{
+			@include font-style((color:$black,size:28px,bold:normal));
+			margin: 0 10px;
+			line-height: 36px;
+		}
+		.tit-line{
+			@include in-block((display:inline-block,height:10px,width:2px));
+			@include border-cr-right(#c2c2c2);
+		}
+		.tit-en{
+			@include font-style((color:#c2c2c2,size:16px,bold:normal));
+			padding: 0 10px;
+		}
+	}
+	.title-right{
+		float: right;
+		a{
+			@include font-style((color:#666,size:14px,bold:normal,hovercolor:$maincolor));
+		}
+		em{
+			@include in-block((display:inline-block,height:12px,width:6px));
+			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyiMallPcRedMore.png);
+			margin-left: 3px;
+		}
+		
+	}
+	}
+#section_1{
+	padding-top: 25px;
+	.title{
+		.title-left{
+			i{
+				background: url(https://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+			}
+		}
+	}
+	
+	
+	.commodity{
+		ul{
+			@include border-cr-right(#e5e5e5);
+			@include border-cr-bottom(#e5e5e5);
+			@include clearfloat();
+			width: 1201px;
+			li{
+				width: 239px;
+				@include border-cr-left(#e5e5e5);
+				@include border-cr-top(#e5e5e5);
+				float: left
+			}
+			.particulars{
+				margin: 15px 15px 0;
+			}
+			a{
+				display: block;
+				@include font-style((color:$black,size:14px,bold:normal));
+				line-height: 22px;
+			}
+			.img-a{
+				text-align: center;
+			}
+			img{
+				width:140px;
+				height:140px;
+				margin-top: 15px;
+			}
+			.sparticulars{
+				background:url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png);
+				
+				@include font-style((color:#fff,size:12px,bold:normal));
+				@include in-block((display:inline-block,height:18px));
+			}
+			em{
+				margin-left: 10px;
+				@include in-block((display:inline-block,height:18px));
+				border-radius: 3px;
+				background: $maincolor;
+				padding-right: 3px;
+				line-height: 18px;
+			}
+			p{
+				@include font-style((color:$gray-1,size:12px,bold:normal));
+				display: inline-block;
+			}
+			p:nth-of-type(2){
+				height:44px;
+				line-height: 44px;
+				display: block;
+			}
+			span:nth-of-type(1){
+				@include font-style((color:$maincolor,size:20px,bold:normal));
+			}
+			span:nth-of-type(2){
+				float: right;
+			}
+		}
+		
+	}
+}
+
+#section_2{
+	padding-top: 25px;
+	.title{
+		.title-left{
+			i{
+				background: url(https://pic3.iqiyipic.com/common/20160907/bb2d4ba3d4fa4b369c76b813af23cd7f.png);
+			}
+		}
+	}
+	
+	.main-cl{
+		float: left;
+		ul{
+			margin-right: 20px;
+			width: 840px;
+			
+			li{
+				@include clearfloat();
+				width: 100%;
+				@include border-cr(#e5e5e5);
+				margin-bottom: 10px;
+			}
+			.xxtitle{
+				width:258px;
+				margin-top: 117px;
+				float: left;
+			}
+			.xximg{
+				float: right;
+				img{
+					height: 290px;
+					width: 580px;
+				}
+			}
+			p{
+				@include font-style((color:$black,size:24px,bold:normal));
+				line-height: 24px;
+				text-align: center;
+			}
+			span{
+				display: block;
+				margin-top: 10px;
+				@include font-style((color:$gray-2,size:18px,bold:normal));
+				line-height: 18px;
+				text-align: center;
+			}
+		}
+	}
+	.main-cr{
+		
+		float: left;
+		
+	}
+	.hs-title{
+		height: 50px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png);
+		span{
+			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redranking.png) no-repeat;
+			margin: 15px 12px 0 16px;
+			display:block;
+			height: 20px;
+			width: 20px;
+			float: left;
+		}
+		h2{
+			width: 290px;
+			@include font-style((color:$black,size:21px,bold:normal));		
+			float: left;
+			line-height: 50px;
+		}
+		
+	}
+	.hotsell{
+		margin-bottom: 20px;
+		width: 340px;
+		
+		.hs-content{
+			@include border-cr(#e5e5e5);
+			@include clearfloat;
+			border-top:0;
+			li{
+				@include clearfloat;
+			}
+			
+			.shopimg,.shopx{
+				float: left;
+			}
+			img{
+				height: 90px;
+				width: 90px;
+				margin: 10px;
+			}
+			.shopx{
+				width: 200px;
+				height: 110px;
+				position: relative;
+				@include border-cr-bottom(#e5e5e5);
+				margin-left: 20px;
+			}
+			li:nth-of-type(1){
+				.mc{
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat;
+				}
+			}
+			li:nth-of-type(2){
+				.mc{
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_second.png) no-repeat;
+				}
+			}
+			li:nth-of-type(3){
+				.mc{
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_third.png) no-repeat;
+				}
+			}
+			li:nth-of-type(4){
+				.mc{
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fourth.png) no-repeat;
+				}
+			}
+			li:nth-of-type(5){
+				.mc{
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fifth.png) no-repeat;
+				}
+				.shopx{
+					border:0;
+				}
+			}
+			
+			.mc{
+				width: 57px;
+				height: 20px;
+				margin-bottom: 10px;
+				margin-top: 14px;
+			}
+			.sname{
+				@include ellipsis();
+				@include font-style((size:14px,color:$gray-2,bold:normal));
+				line-height: 14px;
+			}
+			.sprice{
+				position: absolute;
+				bottom: 10px;
+				left: 0;
+				width: 100%;
+				line-height: 18px;
+				
+				span{
+					@include font-style((size:18px,color:$maincolor,bold:normal));
+				}
+				i{
+					@include font-style((size:12px,color:$gray-1,bold:normal));
+					float: right;
+				}
+				em{
+					color: $maincolor;
+				}
+			}
+		}
+	}
+	.hottj{
+		ul{
+			@include border-cr(#e5e5e5);
+			@include clearfloat;
+			border-top:0;
+			box-sizing: border-box;
+			
+		}
+		.hs-title{
+			span{
+				background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redrecommend.png);
+			}
+		}
+		.tjimg{
+			img{
+				width: 320px;
+				height: 160px;
+				padding: 10px 9px;
+			}
+		}
+		.tjxx{
+			p{
+				margin: 0 10px 8px;
+			@include font-style((size:14px,color:$black,bold:normal));
+			@include ellipsis();
+			line-height: 14px;
+			}
+			span{
+				margin: 0 10px;
+				@include font-style((size:12px,color:$gray-1,bold:normal));
+				line-height: 12px;
+				@include ellipsis();
+			}
+		}
+	}
+	@include clearfloat();
+	
+}
+
+#section_3{
+	.title{
+		.title-left{
+			i{
+				background: url(https://pic2.iqiyipic.com/common/20160907/aeb02196c5134738a34bd527c3bd5395.png);
+			}
+		}
+	}
+	.brand-content{
+		position: relative;
+		span{
+			@include in-block((display:inline-block,height:60px,width: 40px));
+			position: absolute;
+			top: 50%;
+			margin-top: -30px;
+			background-repeat: no-repeat;
+		}
+		.ljt{
+			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png);
+			left: -1px;
+		}
+		.rjt{
+			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png);
+			right: 0;
+		}
+		ul{
+			@include clearfloat();
+			li{
+			
+				@include clearfloat();
+			}
+		}
+		.imgitems{
+			a{
+				height: 119px;
+				width: 119px;
+				@include border-cr(#e5e5e5);
+				display: block;
+				overflow: hidden;
+			}
+			
+			float: left;
+			margin:-1px 0 0 -1px;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+#top{
+	height: $topheight;
+	width: 100%;
+	@include border-cr-bottom(#e7e7e7);
+	background: #f7f7f7;
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	.top-left{
+		float: left;
+	}
+	.login-head{
+		padding: 0 9px;
+		height:32px;
+		float: left;
+		span{
+			@include in-block($style:(height:3px,width:5px,display:inline-block));
+			background-image:$topurl;
+			background-position: -80px 0;
+			cursor: pointer;
+			margin-left: 5px;
+			margin-top: 14px;
+		}
+	}
+	.login-head,.login li{
+		margin-right: 20px
+	}
+	.login{
+		width: 300px;
+		li{
+			float: left;
+			line-height: $topheight+1;
+		}
+		li:nth-of-type(1){
+			color: $gray-1;
+		}
+		a{
+			@include font-style($style:(size:12px,color:$gray-1,bold:normal,hovercolor:$maincolor));
+			text-decoration: none;
+		}
+		
+	}
+	.top-right{
+			float: right;
+			li{
+				float: left;
+				margin-left: 20px;
+				margin-top: 9px;
+				a{
+					@include font-style($style:(size:12px,color:$gray-1,bold:normal,hovercolor:$maincolor));		
+					text-decoration: none;
+					float: left;
+				}
+				
+				em{
+					@include font-style($style:(size:12px,color:#f66a11,bold:bold));
+				}
+			}	
+				
+				.line{
+					margin-top: 10px;
+					margin-left:20px;
+					@include border-cr-left(#e5e5e5);
+					height: 8px;
+				}
+				i{
+					margin-right: 5px;
+				}
+			li:nth-of-type(1) i{
+				background: url(../img/topMenuCar_redicon.png);
+				@include in-block($style:(height:12px,width:12px,display:inline-block));
+			}
+			@for $i from 1 through 4 {//$i:1--5  特殊变量
+			  .topmenu_#{$i}{
+				  @include in-block($style:(height:12px,width:12px,display:inline-block));
+					background:$topurl;
+			  }
+			}
+			 .topmenu_1{
+				 background-position: 0 0px;
+			 }
+			 .topmenu_2{
+			 				 background-position: -110px 0px;
+			 }
+			 .topmenu_3{
+			 				 background-position: -40px 0px;
+			 }
+			 .topmenu_4{
+			 				 background-position: -60px 0px;
+			 }
+			 .topmenu_5{
+							background:$topurl;
+							 background-position: -80px 0px;
+							 @include in-block($style:(height:12px,width:10px,display:inline-block));
+							  margin-top: 5px;
+							  margin-left: 5px;
+			}
+			
+	}
+}
+
+
+.img-top{
+	background: url(https://pic0.iqiyipic.com/common/20190211/1922081dbef5496880f8b0f8073cad3c.jpg) no-repeat center;
+	height: 400px;
+	position: relative;
+	span{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		background: #4A708B;
+		color:#fff;
+		width: 44px;
+		height: 15px;
+		display: block;
+		line-height: 15px;
+		cursor: pointer;
+		&::after{
+			content: "";
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/iqiyiMallPcIndexExpendTrans.png) no-repeat;
+			background-position: 0 -15px;
+		}
+	}
+}
