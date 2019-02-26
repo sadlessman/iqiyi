@@ -150,8 +150,10 @@
 			}
 			a{
 				display: block;
+				@include ellipsis();
 				@include font-style((color:$black,size:14px,bold:normal));
 				line-height: 22px;
+				
 			}
 			.img-a{
 				text-align: center;
@@ -393,6 +395,10 @@
 	}
 	@include clearfloat();
 	
+}
+
+#advertising_2{
+	margin-bottom: 30px;
 }
 
 #section_3{

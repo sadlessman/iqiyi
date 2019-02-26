@@ -44,7 +44,7 @@
 		margin-left: 20px;
 		@include clearfloat();
 		li{
-			margin-right: 20px;
+			margin-right: 19px;
 			height: 60px;
 			width: 60px;
 			float: left;
@@ -54,6 +54,9 @@
 				height: 56px;
 				width: 56px;
 				padding: 1px;
+			}
+			img:hover{
+				border-color:$maincolor;
 			}
 		}
 	}

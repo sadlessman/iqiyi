@@ -45,7 +45,7 @@
   height: 0;
   visibility: hidden; }
 .imglist ul li {
-  margin-right: 20px;
+  margin-right: 19px;
   height: 60px;
   width: 60px;
   float: left; }
@@ -55,6 +55,8 @@
   height: 56px;
   width: 56px;
   padding: 1px; }
+.imglist ul li img:hover {
+  border-color: #ee394b; }
 
 .rightxx {
   float: left;

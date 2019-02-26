@@ -429,6 +429,10 @@
   margin: 15px 15px 0; }
 #section_1 .commodity ul a {
   display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 14px;
   color: #333;
   font-weight: normal;
@@ -654,6 +658,9 @@
   height: 0;
   visibility: hidden; }
 
+#advertising_2 {
+  margin-bottom: 30px; }
+
 #section_3 .title .title-left i {
   background: url(https://pic2.iqiyipic.com/common/20160907/aeb02196c5134738a34bd527c3bd5395.png); }
 #section_3 .brand-content {
@@ -697,7 +704,7 @@
   display: block;
   overflow: hidden; }
 
-#section_3 {
+#section_4 {
   background: #fafafa;
   border-top: 1px #e5e5e5 solid;
   border-bottom: 1px #e5e5e5 solid; }

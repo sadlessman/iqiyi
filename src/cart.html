@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
-	
+	<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main.js"></script>
 </head>
 <body>
 	<!--------顶部----------->
@@ -34,11 +34,14 @@
 	<!--------主体----------->
 	<div class="cart-main">
 		<div class="main">
+			<div class="empty-cart">
+				请去买点东西
+			</div>
 			<div class="cart">
 				<div class="cart-header">
 					<h1>我的购物车</h1>
 				</div>
-				<div class="cart-title">
+				<div class="cart-title allcheck">
 					<ul>
 						<li><input type="checkbox" name="" id="" value="" /></li>
 						<li>
@@ -51,7 +54,8 @@
 						<li>交易操作</li>
 					</ul>
 				</div>
-				<div class="cart-content">
+				<div class="cartxx-con">
+					<div class="cart-content clone-box-1">
 					<div class="cart-title">
 						<ul>
 							<li><input type="checkbox" name="" id="" value="" /></li>
@@ -63,11 +67,11 @@
 					<div class="cart-conm">
 						<ul>
 							<li>
-								<input type="checkbox" name="" id="" value="" /></li>
+								<input type="checkbox" name="" id="" value=""/></li>
 							<li>
 								<img src="https://mall0.iqiyipic.com/mall/20180702/38/94/mall_5b3a05b0d2999d6a94933894_80_80.png" >
 							</li>
-							<li>
+							<li class="cart-cont">
 								<p>小猪佩奇Peppa Pig儿童毛绒可爱卡通圆形斜跨包零钱包</p>
 								<span>颜色分类: 佩奇(粉)</span>
 								<div class="icon-box">
@@ -98,15 +102,17 @@
 							</li>
 							<li class="operate-li">
 								<span>移入收藏夹</span>
-								<a href="">删除</a>
+								<a href="javascript:;">删除</a>
 							</li>
 						</ul>
 					</div>
 				</div>
+				</div>
 				
-				<div class="cart-title cart-footer">
+				
+				<div class="cart-title cart-footer allcheck">
 					<ul>
-						<li><input type="checkbox" name="" id="" value="" /></li>
+						<li><input type="checkbox" name="" id="" value="" checked=""/></li>
 						<li>
 							全选
 						</li>
@@ -121,7 +127,7 @@
 						</li>
 						<li id="allmoney">
 							合计（不含运费）：
-							<i>￥19</i>
+							<i></i>
 						</li>
 						<li id="jiesuanbtn">
 							<p>结算</p>
