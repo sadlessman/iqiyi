@@ -56,7 +56,58 @@
 				em{
 					@include font-style($style:(size:12px,color:#f66a11,bold:bold));
 				}
-			}	
+			}
+				li:nth-of-type(5){
+					position: relative;
+					a{
+						position: relative;
+						z-index: 10;
+					}
+					i{
+						position: relative;
+						z-index: 10;
+					}
+					.backbox{
+						display: none;
+						background: #fff;
+						z-index: 7;
+						position: absolute;
+						height:31px ;
+						width:97px;
+						top: -8px;
+						left: -8px;
+						border-left: 1px solid #e7e7e7;
+						border-right: 1px solid #e7e7e7;
+					}
+					
+				}
+				
+				.erweima{
+					display: none;
+					position: absolute;
+					z-index: 5;
+					padding: 10px;
+					background: #fff;
+					border: 1px solid #e7e7e7;
+					top: 22px;
+					left: -7px;
+					width: 180px;
+					img{
+						width: 80px;
+						height: 80px;
+						float: left;
+					}
+					p{
+						float: left;
+						width: 80px;
+						line-height: 24px;
+						margin-left: 10px;
+						margin-top: 10px;
+						a{
+							color: $black;
+						}
+					}
+				}
 				
 				.line{
 					margin-top: 10px;
