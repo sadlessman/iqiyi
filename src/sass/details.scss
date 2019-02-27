@@ -22,8 +22,15 @@
 			max-height:100%;
 			max-width:100%;
 		}
+		.smallzoom{
+			position: absolute;
+			display: none;
+			background: url(http://www.iqiyipic.com/common/fix/iqiyi_shop_images/image_zoom.png);
+			cursor: move;
+			}
 	}
 	.bigzoom{
+		z-index: 20;
 		display: none;
 		height: 420px;
 		width: 420px;

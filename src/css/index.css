@@ -243,7 +243,16 @@
   float: right;
   margin-top: 30px; }
 .head-right ul {
-  float: left; }
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 70px; }
+.head-right ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: #fff; }
 .head-right ul img {
   width: 50px;
   height: 50px;
@@ -264,6 +273,7 @@
   color: #777;
   font-weight: normal; }
 .head-right .jt {
+  position: relative;
   float: left;
   background: url(http://pic0.iqiyipic.com/common/20150714/arrow2.gif);
   width: 39px;
@@ -673,20 +683,21 @@
   top: 50%;
   margin-top: -30px;
   background-repeat: no-repeat;
-  z-index: 5; }
+  z-index: 20;
+  display: none; }
 #section_3 .brand-content .ljt {
   background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png);
   left: -1px; }
 #section_3 .brand-content .rjt {
   background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png);
   right: 0; }
-#section_3 .brand-content ul::after {
-  content: '';
-  clear: both;
-  display: block;
-  width: 0;
-  height: 0;
-  visibility: hidden; }
+#section_3 .brand-content ul {
+  height: 240px;
+  position: relative; }
+#section_3 .brand-content ul li {
+  position: absolute;
+  left: 0;
+  top: 0; }
 #section_3 .brand-content ul li::after {
   content: '';
   clear: both;
@@ -703,6 +714,13 @@
   border: 1px #e5e5e5 solid;
   display: block;
   overflow: hidden; }
+#section_3 .brand-content .imgitems::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
 
 #section_4 {
   background: #fafafa;
@@ -845,6 +863,7 @@
 
 .right-lan {
   position: fixed;
+  display: none;
   left: 1369.5px;
   bottom: 10px;
   height: 82px; }

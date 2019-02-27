@@ -417,7 +417,8 @@
 			top: 50%;
 			margin-top: -30px;
 			background-repeat: no-repeat;
-			z-index: 5;
+			z-index: 20;
+			display: none;
 		}
 		.ljt{
 			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png);
@@ -429,9 +430,12 @@
 			right: 0;
 		}
 		ul{
-			@include clearfloat();
+			height: 240px;
+			position: relative;
 			li{
-				
+				position: absolute;
+				left: 0;
+				top: 0;
 				@include clearfloat();
 			}
 		}
@@ -446,6 +450,7 @@
 			
 			float: left;
 			margin:-1px 0 0 -1px;
+			@include clearfloat();
 		}
 	}
 }

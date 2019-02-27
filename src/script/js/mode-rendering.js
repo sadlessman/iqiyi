@@ -1,5 +1,12 @@
 define(['config'], function() {
 	require(['jquery'], function() {
+		(function () {
+			if ($('#index-footer')) {
+				$('#index-footer').load('footer.html');
+			}
+			
+		})();
+		
 		
 		//主页数据渲染
 		(function () {
@@ -36,11 +43,13 @@ define(['config'], function() {
 		
 		
 		//详情页信息渲染
+		
 		(function () {
-			var xxid = location.search.substring(1).split('=')[1];
+			if ($('.details-xr').length>0) {
+				var xxid = location.search.substring(1).split('=')[1];
 			
 			$.ajax({
-				url: 'http://10.31.162.173/iqiyifub/iqiyi/php/detail.php',
+				url: 'http://10.31.162.173/iqiyifub/iqiyi/php/userdata.php',
 				data: {
 					sid: xxid
 				},
@@ -49,6 +58,7 @@ define(['config'], function() {
 				$('.smallpic img').attr('src', data.url);
 				$('.bigzoom img').attr('src', data.url);
 				$('.smallpic').attr('sid', data.sid);
+				$('.nav-lian .spname').html(data.title);
 				$('.spbt-t').html(data.title);
 				$('.price .price-num em').html(data.price);
 				var arr = data.urls.split(',');
@@ -58,7 +68,7 @@ define(['config'], function() {
 				});
 				$('.imglist ul').html(str);
 			});
-			
+			}
 		})();
 	})
 })

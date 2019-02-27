@@ -60,6 +60,16 @@
 	margin-top: 30px;
 	ul{
 		float: left;
+		position: relative;
+		width: 150px;
+		height: 70px;
+		li{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			background: #fff;
+		}
 		img{
 			width: 50px;
 			height: 50px;
@@ -81,6 +91,7 @@
 		}
 	}
 	.jt{
+		position: relative;
 		float: left;
 		@include clearfloat();
 		background: url(http://pic0.iqiyipic.com/common/20150714/arrow2.gif);
