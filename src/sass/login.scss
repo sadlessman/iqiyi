@@ -57,6 +57,9 @@ body{
 			@include border-cr-bottom(#ddd);
 			p{
 				padding-top: 26px;
+				span{
+					display: none;
+				}
 			}
 			input{
 				margin-top: 8px;

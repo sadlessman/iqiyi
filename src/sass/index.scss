@@ -8,15 +8,15 @@
 @import "footer";
 
 .right-lan{
-	position: fixed;
+	position:fixed;
 	display:none;
-	left: 1369.5px;
-    bottom: 10px;
+	right: 0px;
+    bottom: 30px;
 	height: 82px;
 	div{
 		width: 36px;
 		height: 36px;
-		background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/baseRedScrollBar.png);
+		background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/baseRedScrollBar.png),url(../img/baseRedScrollBar.png);
 		cursor: pointer;
 	}
 	.righht-fankui{

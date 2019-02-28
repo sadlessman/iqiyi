@@ -20,5 +20,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "爱奇艺商城项目",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadlessman/iqiyi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sadlessman/iqiyi/issues"
+  },
+  "homepage": "https://github.com/sadlessman/iqiyi#readme"
 }

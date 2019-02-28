@@ -9,13 +9,45 @@
 	margin-top: 30px;
 	float: left;
 }
+.top-data-list{
+	width: 404px;
+	display: none;
+	@include border-cr($maincolor);
+	position: absolute;
+	left:-1px;
+	top:34px;
+	z-index: 5;
+	li{
+		height: 30px;
+		background: #FFF;
+		line-height:30px;
+		cursor: pointer;
+		a{
+			color: #FFF;
+		}
+		&:hover{
+			background: #eee;
+		}
+		span{
+			color: $black;
+			margin-left: 10px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		em{
+			float: right;
+			margin-right: 10px;
+			color: $gray-2;
+		}
+	}
+}
 .seek{
 	margin-top:37px;
 	padding-left: 154px;
 	float: left;
 	.seek-content{
+		position: relative;
 		display: inline-block;
-		overflow: hidden;
 		@include border-cr($maincolor);
 		input{
 			display: block;
@@ -94,7 +126,7 @@
 		position: relative;
 		float: left;
 		@include clearfloat();
-		background: url(http://pic0.iqiyipic.com/common/20150714/arrow2.gif);
+		background: url(http://pic0.iqiyipic.com/common/20150714/arrow2.gif),url(../img/arrow2.gif);
 		width: 39px;
 		margin: 31px 0 0 10px;
 		span{

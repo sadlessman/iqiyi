@@ -1,5 +1,36 @@
 define(['config'], function() {
 	require(['jquery', 'jqcookie'], function() {
+		
+		(function() {
+			if ($('.login-idbs').length>0) {
+				$('.login-input input').on('focus', function() {
+				$('.login-input').find('span').show();
+				$(this).attr({
+					"placeholder": ''
+				});
+			});
+			$('.login-input input').on('blur', function() {
+				$('.login-input').find('span').hide();
+				$(this).attr({
+					"placeholder": '请输入手机号或邮箱'
+				});
+			});
+			$('.login-pass input').on('focus', function() {
+				$('.login-pass').find('span').show();
+				$(this).attr({
+					"placeholder": ''
+				});
+			});
+			$('.login-pass input').on('blur', function() {
+				$('.login-pass').find('span').hide();
+				$(this).attr({
+					"placeholder": '请输入密码'
+				});
+			});
+			}
+			
+		})();
+		
 		//输入框获取焦点的事件
 
 		(function() {
@@ -82,6 +113,26 @@ define(['config'], function() {
 							});
 							username = false;
 						}
+					
+					
+					var phone=$('.login-input input').val();
+					
+						$.ajax({
+							type: 'post',
+							url: 'http://10.31.162.173/iqiyifub/iqiyi/php/userdata.php',
+							data: {
+								tel: phone
+							}
+						}).done(function (data) {
+							if (data) {
+								$('.login-input').find('span').html('该手机号已注册').css({
+								"color": "red"
+							});
+							}
+							
+						});
+						
+						
 					}
 					if (passwordflag && username && changezt) {
 						$('.login-button input').removeAttr("disabled",);
@@ -129,10 +180,10 @@ define(['config'], function() {
 					}
 				});
 				$('.login-pass input').on('input', function() {
-					var regnum = /\d+/; //数字
-					var reglowercase = /[a-z]+/; //小写
-					var reguppercase = /[A-Z]+/; //大写
-					var other = /[^0-9a-zA-Z]+/; //其他字符
+					var regnum = /\d+/; 
+					var reglowercase = /[a-z]+/; 
+					var reguppercase = /[A-Z]+/;
+					var other = /[^0-9a-zA-Z]+/; 
 					var num = 0;
 					if ($(this).val() == '') {
 						$('.login-pass').find('span').html('密码不能为空').css({
@@ -250,7 +301,31 @@ define(['config'], function() {
 		
 		})();
 		
-		
 		//登录状态的确认
+		(function () {
+			$('.login-head').hover(function () {
+				$('.backbox-t').show();
+				$('.tuichu').show();
+			},function () {
+				$('.backbox-t').hide();
+				$('.tuichu').hide();
+			})
+			
+			if ($.cookie('username')) {
+				$('.login-head').show();
+				$('.tuichu a:nth-of-type(1)').html($.cookie('username'));
+				$('.login li:nth-of-type(2)').hide();
+				$('.login li:nth-of-type(3)').hide();
+			}else{
+				$('.login-head').hide();
+			}
+			
+			$('.tuichu a:nth-of-type(2)').on('click',function () {
+				$.cookie('username',null, { expires:-1});
+				window.location.reload();
+			})	
+			
+		})();
+		
 	})
 })

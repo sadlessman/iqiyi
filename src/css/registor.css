@@ -80,7 +80,7 @@ body {
   display: inline-block;
   height: 16px;
   width: 16px;
-  background: url(http://www.iqiyipic.com/common/fix/v3-login/login-tn.png) no-repeat 0 -200px; }
+  background: url(http://www.iqiyipic.com/common/fix/v3-login/login-tn.png) no-repeat 0 -200px, url(../img/login-tn.png) no-repeat 0 -200px; }
 .login-frame .login-button input {
   cursor: not-allowed;
   background: #bcdd98;

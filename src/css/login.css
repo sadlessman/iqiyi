@@ -47,6 +47,8 @@ body {
   border-bottom: 1px #ddd solid; }
 .login-frame .login-input p, .login-frame .login-pass p {
   padding-top: 26px; }
+.login-frame .login-input p span, .login-frame .login-pass p span {
+  display: none; }
 .login-frame .login-input input, .login-frame .login-pass input {
   margin-top: 8px; }
 .login-frame .login-pass a {

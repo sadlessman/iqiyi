@@ -12,7 +12,9 @@
 .main .login-head {
   padding: 0 9px;
   height: 32px;
-  float: left; }
+  float: left;
+  position: relative;
+  display: none; }
 .main .login-head span {
   display: inline-block;
   height: 3px;
@@ -21,50 +23,91 @@
   background-position: -80px 0;
   cursor: pointer;
   margin-left: 5px;
-  margin-top: 14px; }
-.main .login-head, .main .login li {
+  margin-top: 14px;
+  z-index: 999;
+  position: absolute; }
+.main .login-head .backbox-t {
+  display: none;
+  background: #fff;
+  z-index: 7;
+  position: absolute;
+  height: 31px;
+  width: 40px;
+  top: 0px;
+  left: -7px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7; }
+.main .tuichu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  padding: 5px 10px 10px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  top: 30px;
+  left: -7px;
+  width: 100px; }
+.main .tuichu img {
+  width: 80px;
+  height: 80px;
+  float: left; }
+.main .tuichu p {
+  float: left;
+  width: 80px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-top: 10px; }
+.main .tuichu p a {
+  color: #333;
+  display: block; }
+.main .tuichu p a:hover {
+  color: #ee394b; }
+
+.login-head, .login li {
   margin-right: 20px; }
-.main .login {
+
+.login {
   width: 300px; }
-.main .login li {
+.login li {
   float: left;
   line-height: 32px; }
-.main .login li:nth-of-type(1) {
+.login li:nth-of-type(1) {
   color: #999; }
-.main .login a {
+.login a {
   font-size: 12px;
   color: #999;
   font-weight: normal;
   text-decoration: none; }
-.main .login a:hover {
+.login a:hover {
   color: #ee394b; }
-.main .top-right {
+
+.top-right {
   float: right; }
-.main .top-right li {
+.top-right li {
   float: left;
   margin-left: 20px;
   margin-top: 9px; }
-.main .top-right li a {
+.top-right li a {
   font-size: 12px;
   color: #999;
   font-weight: normal;
   text-decoration: none;
   float: left; }
-.main .top-right li a:hover {
+.top-right li a:hover {
   color: #ee394b; }
-.main .top-right li em {
+.top-right li em {
   font-size: 12px;
   color: #f66a11;
   font-weight: bold; }
-.main .top-right li:nth-of-type(5) {
+.top-right li:nth-of-type(5) {
   position: relative; }
-.main .top-right li:nth-of-type(5) a {
+.top-right li:nth-of-type(5) a {
   position: relative;
   z-index: 10; }
-.main .top-right li:nth-of-type(5) i {
+.top-right li:nth-of-type(5) i {
   position: relative;
   z-index: 10; }
-.main .top-right li:nth-of-type(5) .backbox {
+.top-right li:nth-of-type(5) .backbox {
   display: none;
   background: #fff;
   z-index: 7;
@@ -75,7 +118,7 @@
   left: -8px;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7; }
-.main .top-right .erweima {
+.top-right .erweima {
   display: none;
   position: absolute;
   z-index: 5;
@@ -85,59 +128,59 @@
   top: 22px;
   left: -7px;
   width: 180px; }
-.main .top-right .erweima img {
+.top-right .erweima img {
   width: 80px;
   height: 80px;
   float: left; }
-.main .top-right .erweima p {
+.top-right .erweima p {
   float: left;
   width: 80px;
   line-height: 24px;
   margin-left: 10px;
   margin-top: 10px; }
-.main .top-right .erweima p a {
+.top-right .erweima p a {
   color: #333; }
-.main .top-right .line {
+.top-right .line {
   margin-top: 10px;
   margin-left: 20px;
   border-left: 1px #e5e5e5 solid;
   height: 8px; }
-.main .top-right i {
+.top-right i {
   margin-right: 5px; }
-.main .top-right li:nth-of-type(1) i {
+.top-right li:nth-of-type(1) i {
   background: url(../img/topMenuCar_redicon.png);
   display: inline-block;
   height: 12px;
   width: 12px; }
-.main .top-right .topmenu_1 {
+.top-right .topmenu_1 {
   display: inline-block;
   height: 12px;
   width: 12px;
   background: url(../img/topMenu_redicon.png); }
-.main .top-right .topmenu_2 {
+.top-right .topmenu_2 {
   display: inline-block;
   height: 12px;
   width: 12px;
   background: url(../img/topMenu_redicon.png); }
-.main .top-right .topmenu_3 {
+.top-right .topmenu_3 {
   display: inline-block;
   height: 12px;
   width: 12px;
   background: url(../img/topMenu_redicon.png); }
-.main .top-right .topmenu_4 {
+.top-right .topmenu_4 {
   display: inline-block;
   height: 12px;
   width: 12px;
   background: url(../img/topMenu_redicon.png); }
-.main .top-right .topmenu_1 {
+.top-right .topmenu_1 {
   background-position: 0 0px; }
-.main .top-right .topmenu_2 {
+.top-right .topmenu_2 {
   background-position: -110px 0px; }
-.main .top-right .topmenu_3 {
+.top-right .topmenu_3 {
   background-position: -40px 0px; }
-.main .top-right .topmenu_4 {
+.top-right .topmenu_4 {
   background-position: -60px 0px; }
-.main .top-right .topmenu_5 {
+.top-right .topmenu_5 {
   background: url(../img/topMenu_redicon.png);
   background-position: -80px 0px;
   display: inline-block;
@@ -188,13 +231,40 @@
   margin-top: 30px;
   float: left; }
 
+.top-data-list {
+  width: 404px;
+  display: none;
+  border: 1px #ee394b solid;
+  position: absolute;
+  left: -1px;
+  top: 34px;
+  z-index: 5; }
+.top-data-list li {
+  height: 30px;
+  background: #FFF;
+  line-height: 30px;
+  cursor: pointer; }
+.top-data-list li a {
+  color: #FFF; }
+.top-data-list li:hover {
+  background: #eee; }
+.top-data-list li span {
+  color: #333;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold; }
+.top-data-list li em {
+  float: right;
+  margin-right: 10px;
+  color: #777; }
+
 .seek {
   margin-top: 37px;
   padding-left: 154px;
   float: left; }
 .seek .seek-content {
+  position: relative;
   display: inline-block;
-  overflow: hidden;
   border: 1px #ee394b solid; }
 .seek .seek-content input {
   display: block;
@@ -275,7 +345,7 @@
 .head-right .jt {
   position: relative;
   float: left;
-  background: url(http://pic0.iqiyipic.com/common/20150714/arrow2.gif);
+  background: url(http://pic0.iqiyipic.com/common/20150714/arrow2.gif), url(../img/arrow2.gif);
   width: 39px;
   margin: 31px 0 0 10px; }
 .head-right .jt::after {
@@ -327,17 +397,17 @@
 #slideshow ul li a {
   height: 100%;
   display: block;
-  background: url(https://pic2.iqiyipic.com/common/20190220/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top; }
+  background: url(https://pic2.iqiyipic.com/common/20190220/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top, url(../img/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top; }
 #slideshow ul li:nth-of-type(2) a {
-  background-image: url(https://pic0.iqiyipic.com/common/20190218/9ba37ede02c7402cbb33fcd92cf72774.jpg); }
+  background-image: url(https://pic0.iqiyipic.com/common/20190218/9ba37ede02c7402cbb33fcd92cf72774.jpg), url(../img/9ba37ede02c7402cbb33fcd92cf72774.jpg); }
 #slideshow ul li:nth-of-type(3) a {
-  background-image: url(https://pic1.iqiyipic.com/common/20190222/4171a86bcee642699a10154c748fc736.jpg); }
+  background-image: url(https://pic1.iqiyipic.com/common/20190222/4171a86bcee642699a10154c748fc736.jpg), url(../img/4171a86bcee642699a10154c748fc736.jpg); }
 #slideshow ul li:nth-of-type(4) a {
-  background-image: url(https://pic1.iqiyipic.com/common/20190221/218623ebb9144f91ad3b6f7c229f7e2c.jpg); }
+  background-image: url(https://pic1.iqiyipic.com/common/20190221/218623ebb9144f91ad3b6f7c229f7e2c.jpg), url(../img/218623ebb9144f91ad3b6f7c229f7e2c.jpg); }
 #slideshow ul li:nth-of-type(5) a {
-  background-image: url(https://pic0.iqiyipic.com/common/20190218/209b62c246504980886d8746c5af7308.jpg); }
+  background-image: url(https://pic0.iqiyipic.com/common/20190218/209b62c246504980886d8746c5af7308.jpg), url(../img/209b62c246504980886d8746c5af7308.jpg); }
 #slideshow ul li:nth-of-type(6) a {
-  background-image: url(https://pic3.iqiyipic.com/common/20190225/1644b5522eca4dcebfd43aff9cc8c13f.jpg); }
+  background-image: url(https://pic3.iqiyipic.com/common/20190225/1644b5522eca4dcebfd43aff9cc8c13f.jpg), url(../img/1644b5522eca4dcebfd43aff9cc8c13f.jpg); }
 #slideshow ol {
   position: absolute;
   left: 50%;
@@ -365,10 +435,10 @@
   background-position: 0 0;
   display: none; }
 #slideshow .left {
-  background: url(//www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png);
+  background: url(//www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png), url(../img/new_focus_prev.png);
   margin-left: -600px; }
 #slideshow .right {
-  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png);
+  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png), url(../img/new_focus_next.png);
   left: 50%;
   margin-left: 600px; }
 
@@ -412,13 +482,13 @@
   display: inline-block;
   height: 12px;
   width: 6px;
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyiMallPcRedMore.png);
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyiMallPcRedMore.png), url(ae2dd09618d545a595cc8c97be29a45d.png);
   margin-left: 3px; }
 
 #section_1 {
   padding-top: 25px; }
 #section_1 .title .title-left i {
-  background: url(https://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png); }
+  background: url(https://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png), url(../img/ae2dd09618d545a595cc8c97be29a45d.png); }
 #section_1 .commodity ul {
   border-right: 1px #e5e5e5 solid;
   border-bottom: 1px #e5e5e5 solid;
@@ -454,7 +524,7 @@
   height: 140px;
   margin-top: 15px; }
 #section_1 .commodity ul .sparticulars {
-  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png);
+  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png), url(../img/newPCindexproductStatus.png);
   font-size: 12px;
   color: #fff;
   font-weight: normal;
@@ -487,7 +557,16 @@
 #section_2 {
   padding-top: 25px; }
 #section_2 .title .title-left i {
-  background: url(https://pic3.iqiyipic.com/common/20160907/bb2d4ba3d4fa4b369c76b813af23cd7f.png); }
+  background: url(https://pic3.iqiyipic.com/common/20160907/bb2d4ba3d4fa4b369c76b813af23cd7f.png), url(../img/bb2d4ba3d4fa4b369c76b813af23cd7f.png); }
+#section_2 .main-content {
+  position: relative; }
+#section_2 .main-content::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
 #section_2 .main-cl {
   float: left; }
 #section_2 .main-cl ul {
@@ -529,13 +608,20 @@
   text-align: center; }
 #section_2 .main-cr {
   float: left; }
+#section_2 .main-cr::after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
 #section_2 .hs-title {
   height: 50px;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png); }
+  background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png), url(../img/nav_tint_redbg.png); }
 #section_2 .hs-title span {
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redranking.png) no-repeat;
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redranking.png) no-repeat, url(../img/good_hot_redranking.png) no-repeat;
   margin: 15px 12px 0 16px;
   display: block;
   height: 20px;
@@ -581,15 +667,15 @@
   border-bottom: 1px #e5e5e5 solid;
   margin-left: 20px; }
 #section_2 .hotsell .hs-content li:nth-of-type(1) .mc {
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat; }
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat, url(../img/hot_first.png) no-repeat; }
 #section_2 .hotsell .hs-content li:nth-of-type(2) .mc {
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_second.png) no-repeat; }
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_second.png) no-repeat, url(../img/hot_second.png) no-repeat; }
 #section_2 .hotsell .hs-content li:nth-of-type(3) .mc {
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_third.png) no-repeat; }
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_third.png) no-repeat, url(../img/hot_third.png) no-repeat; }
 #section_2 .hotsell .hs-content li:nth-of-type(4) .mc {
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fourth.png) no-repeat; }
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fourth.png) no-repeat, url(../img/hot_fourth.png) no-repeat; }
 #section_2 .hotsell .hs-content li:nth-of-type(5) .mc {
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fifth.png) no-repeat; }
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fifth.png) no-repeat, url(../img/hot_fifth.png) no-repeat; }
 #section_2 .hotsell .hs-content li:nth-of-type(5) .shopx {
   border: 0; }
 #section_2 .hotsell .hs-content .mc {
@@ -635,7 +721,7 @@
   height: 0;
   visibility: hidden; }
 #section_2 .hottj .hs-title span {
-  background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redrecommend.png); }
+  background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redrecommend.png), url(../img/good_hot_redrecommend.png); }
 #section_2 .hottj .tjimg img {
   width: 320px;
   height: 160px;
@@ -684,12 +770,13 @@
   margin-top: -30px;
   background-repeat: no-repeat;
   z-index: 20;
-  display: none; }
+  display: none;
+  cursor: pointer; }
 #section_3 .brand-content .ljt {
-  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png);
+  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png), url(../img/newPCindexprev.png);
   left: -1px; }
 #section_3 .brand-content .rjt {
-  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png);
+  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png), url(../img/newPcINdexNext.png);
   right: 0; }
 #section_3 .brand-content ul {
   height: 240px;
@@ -864,13 +951,13 @@
 .right-lan {
   position: fixed;
   display: none;
-  left: 1369.5px;
-  bottom: 10px;
+  right: 0px;
+  bottom: 30px;
   height: 82px; }
 .right-lan div {
   width: 36px;
   height: 36px;
-  background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/baseRedScrollBar.png);
+  background-image: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/baseRedScrollBar.png), url(../img/baseRedScrollBar.png);
   cursor: pointer; }
 .right-lan .righht-fankui {
   background-position: -50px -82px;

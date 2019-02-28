@@ -14,32 +14,32 @@
 			a{
 				height: 100%;
 				display: block;
-				background:url(https://pic2.iqiyipic.com/common/20190220/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top;
+				background:url(https://pic2.iqiyipic.com/common/20190220/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top,url(../img/f480753e006e4199bff4cb53d4affe41.jpg) no-repeat center top;
 			}
 		}
 		li:nth-of-type(2){
 			a{
-				background-image: url(https://pic0.iqiyipic.com/common/20190218/9ba37ede02c7402cbb33fcd92cf72774.jpg);
+				background-image: url(https://pic0.iqiyipic.com/common/20190218/9ba37ede02c7402cbb33fcd92cf72774.jpg),url(../img/9ba37ede02c7402cbb33fcd92cf72774.jpg);
 			}
 		}
 		li:nth-of-type(3){
 			a{
-				background-image: url(https://pic1.iqiyipic.com/common/20190222/4171a86bcee642699a10154c748fc736.jpg);
+				background-image: url(https://pic1.iqiyipic.com/common/20190222/4171a86bcee642699a10154c748fc736.jpg),url(../img/4171a86bcee642699a10154c748fc736.jpg);
 			}
 		}
 		li:nth-of-type(4){
 			a{
-				background-image: url(https://pic1.iqiyipic.com/common/20190221/218623ebb9144f91ad3b6f7c229f7e2c.jpg);
+				background-image: url(https://pic1.iqiyipic.com/common/20190221/218623ebb9144f91ad3b6f7c229f7e2c.jpg),url(../img/218623ebb9144f91ad3b6f7c229f7e2c.jpg);
 			}
 		}
 		li:nth-of-type(5){
 			a{
-				background-image: url(https://pic0.iqiyipic.com/common/20190218/209b62c246504980886d8746c5af7308.jpg);
+				background-image: url(https://pic0.iqiyipic.com/common/20190218/209b62c246504980886d8746c5af7308.jpg),url(../img/209b62c246504980886d8746c5af7308.jpg);
 			}
 		}
 		li:nth-of-type(6){
 			a{
-				background-image: url(https://pic3.iqiyipic.com/common/20190225/1644b5522eca4dcebfd43aff9cc8c13f.jpg);
+				background-image: url(https://pic3.iqiyipic.com/common/20190225/1644b5522eca4dcebfd43aff9cc8c13f.jpg),url(../img/1644b5522eca4dcebfd43aff9cc8c13f.jpg);
 			}
 		}
 	}
@@ -73,11 +73,11 @@
 		display: none;
 	}
 	.left{
-		background: url(//www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png);
+		background: url(//www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png),url(../img/new_focus_prev.png);
 		margin-left: -600px;
 	}
 	.right{
-		background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png);
+		background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png),url(../img/new_focus_next.png);
 		left: 50%;
 		margin-left: 600px;
 	}
@@ -116,7 +116,7 @@
 		}
 		em{
 			@include in-block((display:inline-block,height:12px,width:6px));
-			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyiMallPcRedMore.png);
+			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyiMallPcRedMore.png),url(ae2dd09618d545a595cc8c97be29a45d.png);
 			margin-left: 3px;
 		}
 		
@@ -127,7 +127,7 @@
 	.title{
 		.title-left{
 			i{
-				background: url(https://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+				background: url(https://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png),url(../img/ae2dd09618d545a595cc8c97be29a45d.png);
 			}
 		}
 	}
@@ -164,7 +164,7 @@
 				margin-top: 15px;
 			}
 			.sparticulars{
-				background:url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png);
+				background:url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png),url(../img/newPCindexproductStatus.png);
 				
 				@include font-style((color:#fff,size:12px,bold:normal));
 				@include in-block((display:inline-block,height:18px));
@@ -202,13 +202,17 @@
 	.title{
 		.title-left{
 			i{
-				background: url(https://pic3.iqiyipic.com/common/20160907/bb2d4ba3d4fa4b369c76b813af23cd7f.png);
+				background: url(https://pic3.iqiyipic.com/common/20160907/bb2d4ba3d4fa4b369c76b813af23cd7f.png),url(../img/bb2d4ba3d4fa4b369c76b813af23cd7f.png);
 			}
 		}
 	}
-	
+	.main-content{
+		@include clearfloat();
+		position: relative;
+		}
 	.main-cl{
 		float: left;
+		
 		ul{
 			margin-right: 20px;
 			width: 840px;
@@ -248,15 +252,15 @@
 	.main-cr{
 		
 		float: left;
-		
+		@include clearfloat();
 	}
 	.hs-title{
 		height: 50px;
 		width: 100%;
 		background-repeat: no-repeat;
-		background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png);
+		background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png),url(../img/nav_tint_redbg.png);
 		span{
-			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redranking.png) no-repeat;
+			background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redranking.png) no-repeat,url(../img/good_hot_redranking.png) no-repeat;
 			margin: 15px 12px 0 16px;
 			display:block;
 			height: 20px;
@@ -300,27 +304,27 @@
 			}
 			li:nth-of-type(1){
 				.mc{
-					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat;
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat,url(../img/hot_first.png) no-repeat;
 				}
 			}
 			li:nth-of-type(2){
 				.mc{
-					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_second.png) no-repeat;
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_second.png) no-repeat,url(../img/hot_second.png) no-repeat;
 				}
 			}
 			li:nth-of-type(3){
 				.mc{
-					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_third.png) no-repeat;
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_third.png) no-repeat,url(../img/hot_third.png) no-repeat;
 				}
 			}
 			li:nth-of-type(4){
 				.mc{
-					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fourth.png) no-repeat;
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fourth.png) no-repeat,url(../img/hot_fourth.png) no-repeat;
 				}
 			}
 			li:nth-of-type(5){
 				.mc{
-					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fifth.png) no-repeat;
+					background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_fifth.png) no-repeat,url(../img/hot_fifth.png) no-repeat;
 				}
 				.shopx{
 					border:0;
@@ -368,7 +372,7 @@
 		}
 		.hs-title{
 			span{
-				background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redrecommend.png);
+				background-image: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redrecommend.png),url(../img/good_hot_redrecommend.png);
 			}
 		}
 		.tjimg{
@@ -411,6 +415,7 @@
 	}
 	.brand-content{
 		position: relative;
+		
 		span{
 			@include in-block((display:inline-block,height:60px,width: 40px));
 			position: absolute;
@@ -419,14 +424,15 @@
 			background-repeat: no-repeat;
 			z-index: 20;
 			display: none;
+			cursor: pointer;
 		}
 		.ljt{
-			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png);
+			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png),url(../img/newPCindexprev.png);
 			left: -1px;
 			
 		}
 		.rjt{
-			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png);
+			background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png),url(../img/newPcINdexNext.png);
 			right: 0;
 		}
 		ul{

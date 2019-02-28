@@ -49,7 +49,7 @@ define(['config'], function() {
 				var xxid = location.search.substring(1).split('=')[1];
 			
 			$.ajax({
-				url: 'http://10.31.162.173/iqiyifub/iqiyi/php/userdata.php',
+				url: 'http://10.31.162.173/iqiyifub/iqiyi/php/detail.php',
 				data: {
 					sid: xxid
 				},

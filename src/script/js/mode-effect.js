@@ -2,7 +2,12 @@ define(['config'], function() {
 	require(['jquery'], function() {
 		require(['jqlazy'],function () {
 			//懒加载
-		$("img.lazy").lazyload();
+			$(function () {
+				$(".lazy").lazyload({
+					effect:'fadeIn'
+				});
+			});
+		
 		});
 		
 		//首页顶部小轮播
@@ -169,6 +174,7 @@ define(['config'], function() {
 			var $imgnum=0;
 			$imgc.delegate("img","mouseover",function (event) {
 			var target = $(event.target);
+			
 			target.css({"transform": "scale(1.1,1.1)"});
 		});
 			$imgc.delegate("img","mouseout",function (event) {
@@ -321,7 +327,11 @@ define(['config'], function() {
 		})();
 		
 		
-		
+		//搜索引擎的实现
+		http://so.iqiyi.com/mall?keyword=%E8%89%BE%E7%90%B3&source=suggest
+		$('.seek-content input').on('input',function () {
+			
+		})
 		
 	})
 })

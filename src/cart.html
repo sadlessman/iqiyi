@@ -4,19 +4,65 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title></title>
+	<title>爱奇艺购物车</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	<link rel="shortcut icon" href="//www.iqiyipic.com/common/images/logo.ico" type="image/icon">
 	<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main.js"></script>
 </head>
 <body>
 	<!--------顶部----------->
+	<div id="top">
+		<div class="main">
+			<div class="top-left">
+				<div class="login-head">
+					<span></span>
+					<div class="backbox-t">
+					</div>
+					<div class="tuichu">
+						<p>
+							<a href="javascript:;">123456798</a>
+							<a href="javascript:;">退出登录</a>
+						</p>
+					</div>
+				</div>
+				<ul class="login">
+					<li>欢迎来到爱奇艺商城</li>
+					<li><a href="http://10.31.162.173/iqiyifub/iqiyi/src/login.html">请登录</a></li>
+					<li><a href="http://10.31.162.173/iqiyifub/iqiyi/src/registor.html">免费注册</a></li>
+				</ul>
+			</div>
+			<div class="top-right">
+				<ul>
+					<li><a href="cart.html"><i></i>购物车<em>0</em>件</a></li>
+					<li><a href="javascript:;"><i class="topmenu_1"></i>买家中心</a></li>
+					<li><a href="javascript:;"><i class="topmenu_2"></i>我的收藏</a></li>
+					<li class="line"></li>
+					<li><a href="javascript:;"><i class="topmenu_3"></i>关注我们</a><i class="topmenu_5"></i>
+						<div class="backbox">
+						</div>
+						<div class="erweima">
+							<img src="http://www.iqiyipic.com/common/fix/myCenter_images/mall_qrcodeNew.jpg" >
+							<p>
+								<a href="javascript:;">微信扫一扫</a>
+								<a href="javascript:;">了解商城动态</a>
+							</p>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li><a href="javascript:;"><i class="topmenu_4"></i>商家中心</a></li>
+					<li class="line"></li>
+					<li><a href="http://10.31.162.173/iqiyifub/iqiyi/src/index.html">爱奇艺首页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!--------头部----------->
 	<div class="car-header">
 		<div class="main">
 			<div class="car-headerl">
-				<a href="index.html"><img src="https://www.iqiyipic.com/common/fix/myCenter_images/logo1126.png" ></a>
+				<a href="index.html"><img src="img/logo1126.png" ></a>
 				
 			</div>
 			<div class="car-headerr">
@@ -36,7 +82,12 @@
 	<div class="cart-main">
 		<div class="main">
 			<div class="empty-cart">
-				请去买点东西
+				<i></i>
+				<div class="empty-cartc">
+					<p>您的购物车没有添加商品哦</p>
+					<span>赶快去购物吧</span>
+					<a href="http://10.31.162.173/iqiyifub/iqiyi/src/index.html">去首页</a>
+				</div>
 			</div>
 			<div class="cart">
 				<div class="cart-header">
@@ -113,7 +164,7 @@
 				
 				<div class="cart-title cart-footer allcheck">
 					<ul>
-						<li><input type="checkbox" name="" id="" value="" checked=""/></li>
+						<li><input type="checkbox" name="" id="" value=""/></li>
 						<li>
 							全选
 						</li>
@@ -124,7 +175,7 @@
 							<a href="">清空购物车</a>
 						</li>
 						<li>
-							已选商品<em>1</em>件
+							已选商品<em>0</em>件
 						</li>
 						<li id="allmoney">
 							合计（不含运费）：
